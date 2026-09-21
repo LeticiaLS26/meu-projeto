@@ -1,7 +1,9 @@
 import React from 'react';
 import './PokemonCard.css';
 
-export function PokemonCard() {
+export function PokemonCard({ pokemon }) {
+  const { id, name, types, image } = pokemon;
+
   return (
     <article className="pokemon-card">
       <header className="card-header">
@@ -11,14 +13,19 @@ export function PokemonCard() {
       
       <figure className="pokemon-image-container">
         <img 
-          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png" 
-          alt="Ilustração do Charmander" 
+          src={image} 
+          alt={`Ilustração do ${name}`}
         />
+      
       </figure>
       
       <ul className="pokemon-types">
-        <li className="type-badge type-fire">Fogo</li>
+
+        <li className={`type-badge type-${type.toLowerCase()}`}>{type}</li>
+
       </ul>
     </article>
   );
 }
+
+

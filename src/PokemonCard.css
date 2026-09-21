@@ -64,3 +64,8 @@
   background-color: #ff421d;
   color: #ffffff;
 }
+
+.type-fogo { background-color: #ff421d; color: #ffffff; }
+.type-agua { background-color: #268bf7; color: #ffffff; }
+.type-planta { background-color: #57b952; color: #ffffff; }
+.type-eletrico { background-color: #fbc02d; color: #333333; }

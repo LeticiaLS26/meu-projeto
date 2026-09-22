@@ -6,22 +6,19 @@ export function PokemonCard({ pokemon }) {
 
   return (
     <article className="pokemon-card">
-      <header className="card-header">
-        <span className="pokemon-id">#004</span>
-        <h2 className="pokemon-name">Charmander</h2>
-      </header>
-      
-      <figure className="pokemon-image-container">
+  
+        <span className="pokemon-id">{id}</span>
+        <h2 className="pokemon-name">{name}</h2>
+     
         <img 
           src={image} 
           alt={`Ilustração do ${name}`}
         />
       
-      </figure>
-      
-      <ul className="pokemon-types">
+      <ul>
 
-        <li className={`type-badge type-${type.toLowerCase()}`}>{type}</li>
+        <li className={`type-badge type-${type.toLowerCase()}`}>
+          {type}</li>
 
       </ul>
     </article>

@@ -34,7 +34,7 @@
 }
 
 .pokemon-image-container {
-  margin: 0 0 1rem 0;
+  margin: 0 0 rem 0;
 }
 
 .pokemon-image-container img {
@@ -60,11 +60,7 @@
   text-transform: uppercase;
 }
 
-.type-fire {
-  background-color: #ff421d;
-  color: #ffffff;
-}
-
+.type-fire {background-color: #ff421d; color: #ffffff;}
 .type-fogo { background-color: #ff421d; color: #ffffff; }
 .type-agua { background-color: #268bf7; color: #ffffff; }
 .type-planta { background-color: #57b952; color: #ffffff; }

@@ -2,26 +2,29 @@ import React from 'react';
 import './PokemonCard.css';
 
 export function PokemonCard({ pokemon }) {
-  const { id, name, types, image } = pokemon;
+  const { id, name, type, image } = pokemon;
 
   return (
-    <article className="pokemon-card">
+    <div className="pokemon-card">
   
-        <span className="pokemon-id">{id}</span>
-        <h2 className="pokemon-name">{name}</h2>
-     
+      <span className="pokemon-id">{id}</span>
+      <h2 className="pokemon-name">{name}</h2>
+     <figure className="pokemon-image-container">
         <img 
           src={image} 
-          alt={`Ilustração do ${name}`}
-        />
+          alt={`Ilustração do ${name}`}/>
+      </figure>
+    
       
+    
       <ul>
 
         <li className={`type-badge type-${type.toLowerCase()}`}>
-          {type}</li>
+          {type}
+        </li>
 
       </ul>
-    </article>
+    </div>
   );
 }
 

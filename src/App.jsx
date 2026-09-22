@@ -28,11 +28,11 @@ function App() {
   return (
     <div className="app-container">
       <Header />
-        <div className="cards-grid">
-          <PokemonCard pokemon={charmander} />
-          <PokemonCard pokemon={squirtle} />
-          <PokemonCard pokemon={bulbasaur} />
-        </div>
+      <div className="cards-grid">
+        <PokemonCard pokemon={charmander} />
+        <PokemonCard pokemon={squirtle} />
+        <PokemonCard pokemon={bulbasaur} />
+      </div>
     </div>
   );
 }

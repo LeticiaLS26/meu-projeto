@@ -1,6 +1,8 @@
 import React from 'react';
 import { Header } from './Header';
 import { PokemonCard } from './PokemonCard'; // Importação do componente
+import Footer from './Footer';
+
 
 function App() {
 
@@ -33,6 +35,7 @@ function App() {
         <PokemonCard pokemon={squirtle} />
         <PokemonCard pokemon={bulbasaur} />
       </div>
+      <Footer />
     </div>
   );
 }

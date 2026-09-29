@@ -1,12 +1,26 @@
 .pokedex-footer {
-    background-color: #1e293b;
-    color: #f1f5f9;
-    justify-content:space-between;
-
+  background-color: #1e293b;
+  color: #f1f5f9;            
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;       
+  padding: 1rem 2rem;       
 }
 
-.pokedex-footer:focus-visible {
-    outline: 3px solid #38bdf8;
-  outline-offset: 4px;
+.pokedex-footer nav a {
+  color: #f1f5f9;
+  text-decoration: none;
+  margin-left: 1.5rem;     
+  transition: opacity 0.2s ease;
+}
 
+.pokedex-footer nav a:hover {
+  opacity: 0.8;       
+}
+
+
+.pokedex-footer nav a:focus-visible {
+  outline: 2px solid #f1f5f9;
+  outline-offset: 4px;
+  border-radius: 4px;
 }

@@ -1,8 +1,7 @@
 import React from 'react';
 import { Header } from './Header';
-import { PokemonCard } from './PokemonCard'; // Importação do componente
-import Footer from './Footer';
-
+import { PokemonCard } from './PokemonCard';
+import { Footer } from './Footer';
 
 function App() {
 
